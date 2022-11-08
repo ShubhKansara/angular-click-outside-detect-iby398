@@ -1,0 +1,8 @@
+<h3>Click outside menu to close it (Angular)</h3>
+<p>This is an answer to <a href="https://stackoverflow.com/questions/51150422/how-to-scope-angular-clickoutside" target="_blank">this question</a> on stackoverflow</p>
+
+<button #toggleButton (click)="toggleMenu()"> Toggle Menu</button>
+
+<div class="menu" *ngIf="isMenuOpen" #menu>
+I'm the menu. Click outside to close me
+</div>
